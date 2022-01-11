@@ -96,7 +96,7 @@ def gameWon():
   else:
     return 1
 
-#function to play game
+# function to play game
 def main():
   player = 0
   while played and gameWon():    
