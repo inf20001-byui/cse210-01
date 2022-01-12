@@ -17,17 +17,6 @@ def gamelocation():
     print( location[6] + ' | ' + location[7] + ' | ' + location[8])
     print(' ')
     
-# Troubleshooting
-'''    print(location[0])
-    print(location[1])
-    print(location[2])
-    print(location[3])
-    print(location[4])
-    print(location[5])
-    print(location[6])
-    print(location[7])
-    print(location[8]) '''
-
 # Adding some color
 class color:
    BLUE = '\033[94m'
@@ -67,7 +56,7 @@ def gameWon():
   playerCharacter = ['X','O']
   winningCombos =[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
 
-  #check all winning possibilities for matches
+  # check all winning possibilities for matches
   for check in winningCombos:
     character1 = location[check[0]]
     if character1 != ' ':
@@ -96,7 +85,7 @@ def gameWon():
   else:
     return 1
 
-# function to play game
+# main function to play game
 def main():
   player = 0
   while played and gameWon():    
